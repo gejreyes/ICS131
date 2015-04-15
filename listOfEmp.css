@@ -1,0 +1,79 @@
+body
+{
+  background-color: white; 
+}
+ 
+#header
+{
+	background-color: black/*#565656 #218C8D   #181818*/; 
+	font-size: 60px;
+	font-family: Script MT Bold;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	border: 10px;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+#navbar table
+{
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 25%;
+	margin-right: 10px;
+	background-color: white; 
+	border: 3px;
+	font-size: 20px;
+}
+
+#navbar td
+{
+	padding: 10px;
+	margin: 20px;
+}
+
+#content table
+{
+	font-size: 20px;
+	font-family: Arial;
+	color:black;
+	margin-left: 20%;
+	padding: 10px;
+}
+
+#left 
+{
+	padding: 10px;
+	border: 10px;
+	margin-left: auto;
+}
+
+#right
+{
+	padding: 10px;
+	border: 10px;
+	margin-left: auto;
+	
+}
+
+h3
+{
+	text-align: center;
+}
+
+
+a:link
+{
+    text-decoration:none;
+    color: black;
+    font-family: Arial;
+}
+
+a:link    {color:#000;}  /* unvisited link  */
+a:visited {color:#000;}  /* visited link    */
+a:hover   {color:#000;}  /* mouse over link */
+a:active  {color:#000;}  /* selected link   */
+
+
