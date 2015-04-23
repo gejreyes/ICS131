@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	<script type="text/javascript">
+		function validate()
+		{
+			var lname = document.frm.LastName.value;
+			var fname = document.frm.Firstname.value;
+			var mname = document.frm.MiddleName.value;
+			var address = document.frm.Address.value;
+			var age = document.frm.Age.value;
+			var gender = document.frm.gender.value;
+			
+			if( lname == "" || fname =="" || mname == "" || address == "" || age == "")
+				{
+					alert("Please fill up the form");
+					return false;
+				}
+				
+			if (!(isNaN(lname)) || !(isNaN(fname)) || !(isNaN(mname)) 
+				{
+					alert("Invalid!Please fill up the form correctly.");
+					return false;
+				}
+			
+	</script>
+	<script>
+			var month = document.frm.month.value;
+			var day = document.frm.day.value;
+			var year = document.frm.year.value;
+			var status = document.frm.maritalStatus.value;
+			var contact = document.frm.ContactNo.value;
+			var email = document.frm.EmailAddress.value;
+			
+			if( contact == "" || email == "")
+				{
+					alert("Please fill up the form");
+					return false;
+				}
+			if(isNaN(contactNo))
+			{
+				alert("Enter an eleven digit number");
+				return false;
+			}
+				
+	</script>
+	<script>
+			var sT = document.frm.SchoolT.value;
+			var iT = document.frm.InclusiveYearsT.value;
+			var sS = document.frm.SchoolS.value;
+			var iS = document.frm.InclusiveYearsS.value;
+			var sP = document.frm.SchoolP.value;
+			var iP = document.frm.Department.value;
+			
+			if( sT == "" || iT == "" || sS == "" || iS == "" || sP == "" || iP == "" )
+				{
+					alert("Please fill up the form");
+					return false;
+				}
+				
+			if(!(isNaN(sT)) || !(isNaN(sS)) || !(isNaN(sP)) || !(isNaN(iT)) || !(isNaN(iS)) || !(isNaN(iP)))
+				{
+					alert("Invalid! Please fill up the form correctly.");
+					return false;
+				}
+	</script>
+	<script>
+			var dept = document.frm.SchoolT.value;
+			var pos = document.frm.Position.value;
+			var sal = document.frm.Salary.value;
+			
+			if( dept == "" || pos =="" || sal=="")
+				{
+					alert("Please fill up the form");
+				}
+			if (!(isNaN(dept)) || !(isNaN(pos)) || !(isNaN(sal)))
+			{
+				alert("Invalid! Please fill up the form correctly.");
+				return false;
+			}
+			
+		}
+	</script>
+	</head>
+	
+	<link type="text/css" rel="stylesheet" href="addEmployee.css"/>
+		<title> Home</title>
+	
+	<form name="frm" onsubmit="return validate()">
+	
+	<body>
+		<div id="header">
+			<img src="header.jpg" width=1100 />
+		</div>
+		
+			<div id="navbar">
+				<table cellspacing="30">
+					<tr>
+						<td>
+							<a href="home2.html">Home</a>
+						</td>
+						<td>
+							<a href="announcementsM.html"> Announcements</a>
+						</td>
+						<td>
+							<a href="index.html"> Sign out</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+	
+	<div id="content">
+		<div id="left">
+			<table>
+				<tr>
+					<td>
+						<img src = no_pic.png>
+					</td>
+					
+				</tr>
+				<tr>
+						<td>
+						<input type="file" name="DP" id="DP">
+						</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="right">
+			<table>
+			<tr>
+			<td>
+			<th style = "text-align: center; font-family: Arial; size: 20px;" > Personal Information: </th>
+			</td>
+			</tr>
+		
+				<tr>
+					<td>
+						<b>Last name: </b>
+					</td>
+					<td>
+						<input type="text" name="LastName" style="width: 350px"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b>First name: </b>
+					</td>
+					<td>
+						<input type="text" name="FirstName" style="width: 350px"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b>Middle name: </b>
+					</td>
+					<td>
+						<input type="text" name="MiddleName" style="width: 350px"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b>Age: </b>
+					</td>
+					<td>
+						<input type="text" name="Age" style="width: 350px"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b>Gender: </b>
+					</td>
+					<td>
+						<Select name="gender">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						</Select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b>Birthdate: </b>
+					</td>
+					<td>
+						<Select name="month">
+						<option value="January">January</option>
+						<option value="February">February</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+						</Select>
+			
+						<Select name ="day">
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+						</Select>
+			
+						<Select name="year">
+						<option value="1950">1950</option>
+						<option value="1951">1951</option>
+						<option value="1952">1952</option>
+						<option value="1953">1953</option>
+						<option value="1954">1954</option>
+						<option value="1955">1955</option>
+						<option value="1956">1956</option>
+						<option value="1957">1957</option>
+						<option value="1958">1958</option>
+						<option value="1959">1959</option>
+						<option value="1960">1960</option>
+						<option value="1961">1961</option>
+						<option value="1962">1962</option>
+						<option value="1963">1963</option>
+						<option value="1964">1964</option>
+						<option value="1965">1965</option>
+						<option value="1966">1966</option>
+						<option value="1967">1967</option>
+						<option value="1968">1968</option>
+						<option value="1969">1969</option>
+						<option value="1970">1970</option>
+						<option value="1971">1971</option>
+						<option value="1972">1972</option>
+						<option value="1973">1973</option>
+						<option value="1974">1974</option>
+						<option value="1975">1975</option>
+						<option value="1976">1976</option>
+						<option value="1977">1977</option>
+						<option value="1978">1978</option>
+						<option value="1979">1979</option>
+						<option value="1980">1980</option>
+						<option value="1981">1981</option>
+						<option value="1982">1982</option>
+						<option value="1983">1983</option>
+						<option value="1984">1984</option>
+						<option value="1985">1985</option>
+						<option value="1986">1986</option>
+						<option value="1987">1987</option>
+						<option value="1988">1988</option>
+						<option value="1989">1989</option>
+						<option value="1990">1990</option>
+						<option value="1991">1991</option>
+						<option value="1992">1992</option>
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+						<option value="1995">1995</option>
+						<option value="1996">1996</option>
+						<option value="1997">1997</option>
+						<option value="1998">1998</option>
+						<option value="1999">1999</option>
+						<option value="2000">2000</option>
+						<option value="2001">2001</option>
+						<option value="2002">2002</option>
+						<option value="2003">2003</option>
+						<option value="2004">2004</option>
+						<option value="2005">2005</option>
+						<option value="2006">2006</option>
+						<option value="2007">2007</option>
+						<option value="2008">2008</option>
+						<option value="2009">2009</option>
+						<option value="2010">2010</option>
+						<option value="2011">2011</option>
+						<option value="2012">2012</option>
+						<option value="2013">2013</option>
+						<option value="2014">2014</option>
+						<option value="2015">2015</option>
+						</Select>	
+				</tr>
+				
+				<tr>
+					<td>
+						<b> Status: </b>
+					</td>
+					<td>
+						<Select name ="maritalStatus">
+						<option value="Single">Single</option>
+						<option value="Married">Married</option>
+						<option value="Widowed">Widowed</option>
+						<option value="Seperated">Seperated</option>
+						<option value="Divorced">Divorced</option>
+						</Select>
+					</td>
+				</tr>
+		
+				<tr>
+					<td>
+						<b>Address: </b>
+					</td>
+					<td>
+						<input type="text" name="Address" style="width: 350px"/>
+					</td>
+				</tr>
+		
+		
+				<tr>
+					<td>
+						<b>Contact No: </b>
+					</td>
+					<td>
+						<input type="text" name="ContactNo" style="width: 350px"/>
+					</td>
+				</tr>
+		
+				<tr>
+					<td>
+						<b>Email Address: </b>
+					</td>
+					<td>
+						<input type="text" name="EmailAddress" style="width: 350px"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<th style = "text-align: center; font-family: Arial; size: 20px;" > Education History: </th>
+					</td>
+				</tr>
+				<tr><td><b>Tertiary:</b></td></tr>
+			
+				<tr>
+					<td>
+						<b>School: </b>
+					</td>
+					<td>
+						<input type="text" name="SchoolT" style="width: 350px"/><br>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<b>Inclusive Years: </b>
+					</td>
+					<td>
+						<input type="text" name="InclusiveYearsT" style="width: 350px"/><br>
+					</td>
+				</tr>
+	
+		
+			<tr><td><b>Secondary:</b></td></tr>
+				<tr>
+					<td>
+						<b>School: </b>
+					</td>
+					<td>
+						<input type="text" name="SchoolS" style="width: 350px"/><br>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b>Inclusive Years: </b>
+					</td>
+					<td>
+						<input type="text" name="InclusiveYearsS" style="width: 350px"/><br>
+					</td>
+				</tr>
+			
+				
+			
+				<tr><td><b>Primary:</b></td></tr><br>
+		
+				<tr>
+					<td>
+						<b>School: </b>
+					</td>
+					<td>
+						<input type="text" name="SchoolP" style="width: 350px"/><br>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<b>Inclusive Years: </b>
+					</td>
+					<td>
+						<input type="text" name="InclusiveYearsP" style="width: 350px"/><br>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>
+						<th style = "text-align: center; font-family: Arial; size: 20px;" >Job Description: </th>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b>Department: </b>
+					</td>
+					<td>
+						<input type="text" name="Department" style="width: 350px"/><br>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b>Position: </b>
+					</td>
+					<td>
+						<input type="text" name="Position" style="width: 350px"/><br>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<b>Salary: </b>
+					</td>
+					<td>
+						<input type="text" name="Salary" style="width: 350px"/><br>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input type="submit" value="ADD EMPLOYEE">
+					</td>
+				</tr>
+					
+			</table>
+		
+		</div>
+	</div>
+</body>
+</form>
+</html>

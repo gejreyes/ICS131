@@ -26,8 +26,6 @@ background-size: cover;
 	padding: 20px;
 	margin: 20px;
 	border: 10px solid black;*/
-	margin-left: 150px;
-	margin-right:150px;
 	background-color: white;
 	background: rgb(0, 0, 0) transparent;   /* Fallback for web browsers that doesn't support RGBa */
 	background: rgba(255, 255, 255, 0.6);   /* RGBa with 0.6 opacity */
@@ -60,7 +58,6 @@ background-size: cover;
 	margin: 10px;
 	color: white;
 }
-
 #content table
 {
 	font-size: 20px;
@@ -69,33 +66,9 @@ background-size: cover;
 	margin-left: 20%;
 }
 
-/*#content #left td
-{
-	margin-top: -10px;
-}
 
-#left 
-{	
-	margin-top: -10px;
-	padding: 10px;
-	border: 10px;
-	margin-left: auto;
-	float: left;
-}
 
-#right
-{
-	padding: 10px;
-	border: 10px;
-	margin-left: auto;
-	
-}
 
-h3
-{
-	text-align: center;
-}
-*/
 
 
 a:link
