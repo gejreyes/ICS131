@@ -9,20 +9,12 @@ background-size: cover;
  
 #header
 {
-<<<<<<< HEAD
 	width: 100%;
-=======
-	background-color: black/*#565656 #218C8D   #181818*/; 
->>>>>>> origin/master
 	font-size: 60px;
 	font-family: Script MT Bold;
 	color: white;
 	text-align: center;
-<<<<<<< HEAD
 	padding: 0px;
-=======
-	padding: 5px;
->>>>>>> origin/master
 	border: 10px;
 	margin-top: -10px;
 	margin-left: -10px;
