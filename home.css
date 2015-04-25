@@ -43,7 +43,11 @@ background-size: cover;
 }
 #navbar table
 {
+<<<<<<< HEAD
 	padding: 0px;
+=======
+	padding: 2px;
+>>>>>>> origin/master
 	margin-top: 10px;
 	margin-bottom: 10px;
 	background-color: black; 

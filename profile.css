@@ -9,12 +9,20 @@ background-size: cover;
  
 #header
 {
+<<<<<<< HEAD
 	width: 100%;
+=======
+	background-color: black/*#565656 #218C8D   #181818*/; 
+>>>>>>> origin/master
 	font-size: 60px;
 	font-family: Script MT Bold;
 	color: white;
 	text-align: center;
+<<<<<<< HEAD
 	padding: 0px;
+=======
+	padding: 5px;
+>>>>>>> origin/master
 	border: 10px;
 	margin-top: -10px;
 	margin-left: -10px;
@@ -43,19 +51,29 @@ background-size: cover;
 }
 #navbar table
 {
+<<<<<<< HEAD
 	padding: 0px;
+=======
+	padding: 2px;
+>>>>>>> origin/master
 	margin-top: 10px;
 	margin-bottom: 10px;
 	background-color: black; 
 	border: 3px;
+<<<<<<< HEAD
 	border-radius: 20px;
+=======
+>>>>>>> origin/master
 	font-size: 20px;
 	width: 100%;
 	text-align: center;
 	color: white;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 #navbar td
 {	
 	
