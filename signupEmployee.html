@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	<script type="text/javascript">
+		function validate()
+		{
+			var user = document.sample.ID.value;
+			var password = document.sample.Password.value;
+			
+			if(user == "")
+			{
+				alert("Enter your ID number and password");
+				return false;
+			}
+			if(password == "")
+			{
+				alert("Enter your ID number and password");
+				return false;
+			}
+			if(isNaN(user))
+			{
+				alert("Please enter your ID number.");
+				return false;
+			}
+			if(user.length != 7)
+			{
+				alert("Invalid. Enter your seven digit ID number");
+				return false;
+			}
+		}
+		
+	</script>
+	</head>
+	
+	
+	<link type="text/css" rel="stylesheet" href="index.css">
+	<title> SIGN IN </title>
+	
+	<form name="sample" onsubmit="return validate()" action="home.html">
+	<body>
+		<div id="header">
+			<img src="cedcover.jpg" width=75% />
+		</div>
+		<body background="bg.jpg" width=100>
+		
+		<div id="content">
+			<table cellspacing = "30">
+				<tr> 
+					<td>
+					</td>
+					<td> 
+						<b> SIGN IN </b> 
+					</td>
+					
+				</tr>
+				<tr>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+						<b> ID no: </b>
+					</td>
+					<td>
+						<input type="text" name="ID" style="width: 300px"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+						<b> Password: </b>
+					</td>
+					<td>
+						<input type="text" name="Password" style="width: 300px"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td>
+					</td>
+					<td>
+						<a href="home.html">
+						<input type="submit" value="SIGN IN">
+						</a>
+					</td>
+				</tr>
+			</table>
+			
+	</form>
+	</body>
+	
+</html>
